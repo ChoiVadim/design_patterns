@@ -1,0 +1,50 @@
+============================================================
+State Pattern - Traffic Light Example
+============================================================
+
+============================================================
+Traffic Light System Starting
+============================================================
+
+--- Cycle 1 ---
+
+[RED] Duration: 30s
+🔴 RED LIGHT - STOP
+   All vehicles must stop
+
+
+[GREEN] Duration: 25s
+🟢 GREEN LIGHT - GO
+   Vehicles may proceed
+
+
+[YELLOW] Duration: 5s
+🟡 YELLOW LIGHT - CAUTION
+   Prepare to stop
+
+------------------------------------------------------------
+
+--- Cycle 2 ---
+
+[RED] Duration: 30s
+🔴 RED LIGHT - STOP
+   All vehicles must stop
+
+
+[GREEN] Duration: 25s
+🟢 GREEN LIGHT - GO
+   Vehicles may proceed
+
+
+[YELLOW] Duration: 5s
+🟡 YELLOW LIGHT - CAUTION
+   Prepare to stop
+
+============================================================
+Traffic Light System Stopped
+============================================================
+
+============================================================
+Key Benefit: Each state knows its own behavior and
+next state, making state transitions clear and maintainable!
+============================================================

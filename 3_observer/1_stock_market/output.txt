@@ -1,0 +1,48 @@
+============================================================
+Observer Pattern - Stock Market Example
+============================================================
+
+Setting up observers:
+------------------------------------------------------------
+  → Trader subscribed to AAPL
+  → Trader subscribed to AAPL
+  → Analyst subscribed to AAPL
+  → MobileApp subscribed to AAPL
+  → EmailNotifier subscribed to AAPL
+
+Simulating price changes:
+============================================================
+
+📈 AAPL price changed: $150.00 → $152.50
+  📱 Mobile App (user123): 🟢 AAPL $152.50 (+1.67%)
+  📧 Email to alerts@example.com: AAPL increased by $2.50
+
+
+📈 AAPL price changed: $152.50 → $148.00
+  📱 Mobile App (user123): 🔴 AAPL $148.00 (-2.95%)
+  📧 Email to alerts@example.com: AAPL decreased by $4.50
+
+
+📈 AAPL price changed: $148.00 → $155.00
+  🔔 Trader John: 📈 BUY SIGNAL for AAPL!
+     Change: +4.73% ($+7.00)
+  📊 Analyst Dr. Smith: 📊 DOWNTREND detected for AAPL
+     Current: $155.00, 3-period avg: $151.83
+  📱 Mobile App (user123): 🟢 AAPL $155.00 (+4.73%)
+  📧 Email to alerts@example.com: AAPL increased by $7.00
+
+Unsubscribing trader2:
+------------------------------------------------------------
+  → Trader unsubscribed from AAPL
+
+
+📈 AAPL price changed: $155.00 → $153.00
+  📊 Analyst Dr. Smith: 📊 DOWNTREND detected for AAPL
+     Current: $153.00, 3-period avg: $152.00
+  📱 Mobile App (user123): 🔴 AAPL $153.00 (-1.29%)
+  📧 Email to alerts@example.com: AAPL decreased by $2.00
+
+============================================================
+Key Benefit: Stock doesn't need to know about specific observers.
+Observers can be added/removed dynamically!
+============================================================

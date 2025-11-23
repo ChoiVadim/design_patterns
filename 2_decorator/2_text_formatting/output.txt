@@ -1,0 +1,36 @@
+============================================================
+Decorator Pattern - Text Formatting Example
+============================================================
+
+1. Plain Text:
+------------------------------------------------------------
+Output: Hello, World!
+
+2. Bold Text:
+------------------------------------------------------------
+Output: **Hello, World!**
+
+3. Bold and Italic:
+------------------------------------------------------------
+Output: ***Hello, World!***
+
+4. Bold, Italic, and Underline:
+------------------------------------------------------------
+Output: __***Hello, World!***__
+
+5. Strikethrough:
+------------------------------------------------------------
+Output: ~~Old Price: $100~~
+
+6. Code Formatting:
+------------------------------------------------------------
+Output: `print('Hello')`
+
+7. Complex Combination (Bold + Italic + Code):
+------------------------------------------------------------
+Output: `***function_name***`
+
+============================================================
+Key Benefit: Can stack multiple formatters dynamically
+without creating classes for every combination!
+============================================================

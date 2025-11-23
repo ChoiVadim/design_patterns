@@ -1,0 +1,41 @@
+============================================================
+Factory Pattern - Database Connections Example
+============================================================
+
+1. MySQL Connection:
+------------------------------------------------------------
+🔌 Connecting to MySQL at localhost:3306
+   Database: mydb, User: root
+✅ MySQL connection established
+📊 Executing MySQL query: SELECT * FROM users LIMIT 2
+📋 Results from MySQL:
+   {'id': 1, 'name': 'John', 'email': 'john@example.com'}
+   {'id': 2, 'name': 'Jane', 'email': 'jane@example.com'}
+🔌 Closing MySQL connection
+
+2. PostgreSQL Connection:
+------------------------------------------------------------
+🔌 Connecting to PostgreSQL at localhost:5432
+   Database: mydb, User: postgres
+✅ PostgreSQL connection established
+📊 Executing PostgreSQL query: SELECT * FROM users LIMIT 2
+📋 Results from PostgreSQL:
+   {'id': 1, 'name': 'Alice', 'email': 'alice@example.com'}
+   {'id': 2, 'name': 'Bob', 'email': 'bob@example.com'}
+🔌 Closing PostgreSQL connection
+
+3. MongoDB Connection:
+------------------------------------------------------------
+🔌 Connecting to MongoDB at localhost:27017
+   Database: mydb, User: admin
+✅ MongoDB connection established
+📊 Executing MongoDB query: db.users.find().limit(2)
+📋 Results from MongoDB:
+   {'_id': '507f1f77bcf86cd799439011', 'name': 'Charlie', 'email': 'charlie@example.com'}
+   {'_id': '507f191e810c19729de860ea', 'name': 'Diana', 'email': 'diana@example.com'}
+🔌 Closing MongoDB connection
+
+============================================================
+Key Benefit: Application doesn't need to know how to create
+specific database connections - factory handles it!
+============================================================

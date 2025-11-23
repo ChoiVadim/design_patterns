@@ -1,0 +1,42 @@
+============================================================
+Composite Pattern - File System Example
+============================================================
+
+File System Structure:
+------------------------------------------------------------
+📁 root/ (3437056 bytes total)
+  📁 Documents/ (261120 bytes total)
+    📄 resume.pdf (245760 bytes)
+    📄 cover_letter.docx (15360 bytes)
+  📁 Projects/ (29696 bytes total)
+    📁 WebApp/ (14336 bytes total)
+      📄 index.html (2048 bytes)
+      📄 style.css (4096 bytes)
+      📄 script.js (8192 bytes)
+    📁 MobileApp/ (15360 bytes total)
+      📄 MainActivity.java (12288 bytes)
+      📄 layout.xml (3072 bytes)
+  📁 Images/ (3145728 bytes total)
+    📄 photo1.jpg (1048576 bytes)
+    📄 photo2.png (2097152 bytes)
+  📄 readme.txt (512 bytes)
+
+Size Analysis:
+------------------------------------------------------------
+Root folder size: 3437056 bytes (3356.50 KB)
+Documents folder size: 261120 bytes
+Projects folder size: 29696 bytes
+WebApp folder size: 14336 bytes
+MobileApp folder size: 15360 bytes
+Images folder size: 3145728 bytes
+
+Uniform Interface Demo:
+------------------------------------------------------------
+root: 3437056 bytes
+Documents: 261120 bytes
+test.txt: 1024 bytes
+
+============================================================
+Key Benefit: Can treat files and folders uniformly!
+Operations work the same way on both individual files and folders!
+============================================================

@@ -1,0 +1,39 @@
+============================================================
+Adapter Pattern - Payment Gateway Example
+============================================================
+
+Processing payments through different gateways:
+============================================================
+
+1. Stripe Payment:
+------------------------------------------------------------
+💳 Stripe: Charging 99.99 USD
+Result: {'transaction_id': 'ch_stripe_90643', 'amount': 99.99, 'currency': 'USD', 'status': 'succeeded', 'gateway': 'stripe'}
+
+2. PayPal Payment:
+------------------------------------------------------------
+💳 PayPal: Processing payment of 149.5 USD
+Result: {'transaction_id': 'PAYPAL-250069', 'amount': 149.5, 'currency': 'USD', 'status': 'approved', 'gateway': 'paypal'}
+
+3. Square Payment:
+------------------------------------------------------------
+💳 Square: Creating payment of 75.0 USD
+Result: {'transaction_id': 'sq_5404681', 'amount': 75.0, 'currency': 'USD', 'status': 'completed', 'gateway': 'square'}
+
+Processing refunds:
+============================================================
+
+4. Stripe Refund:
+------------------------------------------------------------
+💳 Stripe: Reversing charge ch_stripe_90643
+Result: {'refund_id': 'ref_ch_stripe_90643', 'transaction_id': 'ch_stripe_90643', 'status': 'refunded', 'gateway': 'stripe'}
+
+5. PayPal Refund:
+------------------------------------------------------------
+💳 PayPal: Cancelling payment PAYPAL-250069
+Result: {'refund_id': 'PAYPAL-250069', 'transaction_id': 'PAYPAL-250069', 'status': 'refunded', 'gateway': 'paypal'}
+
+============================================================
+Key Benefit: Can use different payment APIs (Stripe, PayPal,
+Square) through a unified PaymentGateway interface!
+============================================================

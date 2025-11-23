@@ -1,0 +1,113 @@
+============================================================
+State Pattern - Vending Machine Example
+============================================================
+
+
+📊 Machine Status:
+   State: NoMoneyState
+   Money: $0.00
+   Selected: None
+   Products:
+     - Coke: $1.50 (Stock: 5)
+     - Pepsi: $1.50 (Stock: 3)
+     - Chips: $2.00 (Stock: 4)
+     - Candy: $1.00 (Stock: 0)
+
+1. Attempting to select product without money:
+------------------------------------------------------------
+❌ Please insert money first
+
+2. Inserting money:
+------------------------------------------------------------
+💰 Inserted $2.00
+
+📊 Machine Status:
+   State: HasMoneyState
+   Money: $2.00
+   Selected: None
+   Products:
+     - Coke: $1.50 (Stock: 5)
+     - Pepsi: $1.50 (Stock: 3)
+     - Chips: $2.00 (Stock: 4)
+     - Candy: $1.00 (Stock: 0)
+
+3. Selecting product:
+------------------------------------------------------------
+✅ Selected Coke ($1.50)
+
+📊 Machine Status:
+   State: SoldState
+   Money: $2.00
+   Selected: Coke
+   Products:
+     - Coke: $1.50 (Stock: 5)
+     - Pepsi: $1.50 (Stock: 3)
+     - Chips: $2.00 (Stock: 4)
+     - Candy: $1.00 (Stock: 0)
+
+4. Dispensing product:
+------------------------------------------------------------
+🎉 Dispensing Coke...
+💰 Returning change: $0.50
+
+📊 Machine Status:
+   State: NoMoneyState
+   Money: $0.00
+   Selected: None
+   Products:
+     - Coke: $1.50 (Stock: 4)
+     - Pepsi: $1.50 (Stock: 3)
+     - Chips: $2.00 (Stock: 4)
+     - Candy: $1.00 (Stock: 0)
+
+5. Another purchase:
+------------------------------------------------------------
+💰 Inserted $1.50
+✅ Selected Pepsi ($1.50)
+🎉 Dispensing Pepsi...
+
+📊 Machine Status:
+   State: NoMoneyState
+   Money: $0.00
+   Selected: None
+   Products:
+     - Coke: $1.50 (Stock: 4)
+     - Pepsi: $1.50 (Stock: 2)
+     - Chips: $2.00 (Stock: 4)
+     - Candy: $1.00 (Stock: 0)
+
+6. Attempting to buy out-of-stock product:
+------------------------------------------------------------
+💰 Inserted $1.00
+✅ Selected Candy ($1.00)
+❌ Candy is out of stock
+
+📊 Machine Status:
+   State: NoMoneyState
+   Money: $1.00
+   Selected: Candy
+   Products:
+     - Coke: $1.50 (Stock: 4)
+     - Pepsi: $1.50 (Stock: 2)
+     - Chips: $2.00 (Stock: 4)
+     - Candy: $1.00 (Stock: 0)
+
+7. Insufficient funds scenario:
+------------------------------------------------------------
+💰 Inserted $1.00
+✅ Selected Chips ($2.00)
+
+📊 Machine Status:
+   State: SoldState
+   Money: $2.00
+   Selected: Chips
+   Products:
+     - Coke: $1.50 (Stock: 4)
+     - Pepsi: $1.50 (Stock: 2)
+     - Chips: $2.00 (Stock: 4)
+     - Candy: $1.00 (Stock: 0)
+
+============================================================
+Key Benefit: State-specific behavior is encapsulated in
+separate classes, making state management clear and maintainable!
+============================================================

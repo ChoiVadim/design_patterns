@@ -1,0 +1,20 @@
+============================================================
+Adapter Pattern - Media Player Example
+============================================================
+
+Playing different media formats:
+------------------------------------------------------------
+🎵 Playing MP3 file: song.mp3
+
+🎬 Playing MP4 file: movie.mp4
+
+🎥 Playing VLC file: video.vlc
+
+Attempting to play unsupported format:
+------------------------------------------------------------
+❌ Error: Invalid media type: avi
+
+============================================================
+Key Benefit: Can use incompatible interfaces (Mp3Player,
+Mp4Player, VlcPlayer) through a unified MediaPlayer interface!
+============================================================

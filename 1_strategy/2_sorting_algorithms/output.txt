@@ -1,0 +1,28 @@
+============================================================
+Strategy Pattern - Sorting Algorithms Example
+============================================================
+
+Original data: [64, 34, 25, 12, 22, 11, 90, 5, 77, 50]
+
+1. Using QuickSort Strategy:
+------------------------------------------------------------
+Algorithm: QuickSort
+Sorted: [5, 11, 12, 22, 25, 34, 50, 64, 77, 90]
+Time: 0.0088 ms
+
+2. Using MergeSort Strategy:
+------------------------------------------------------------
+Algorithm: MergeSort
+Sorted: [5, 11, 12, 22, 25, 34, 50, 64, 77, 90]
+Time: 0.0088 ms
+
+3. Using BubbleSort Strategy:
+------------------------------------------------------------
+Algorithm: BubbleSort
+Sorted: [5, 11, 12, 22, 25, 34, 50, 64, 77, 90]
+Time: 0.0062 ms
+
+============================================================
+Key Benefit: Can switch algorithms based on data characteristics
+without modifying the DataSorter class!
+============================================================

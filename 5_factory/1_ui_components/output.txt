@@ -1,0 +1,32 @@
+============================================================
+Factory Pattern - UI Components Example
+============================================================
+
+1. Windows Application:
+------------------------------------------------------------
+  🪟 Windows Menu Bar
+  🪟 [Windows Button]
+  🪟 Windows Dialog Window
+  Windows button clicked - using Win32 API
+  Showing Windows native dialog (Win32)
+
+2. macOS Application:
+------------------------------------------------------------
+  🍎 macOS Menu Bar
+  🍎 [macOS Button]
+  🍎 macOS Dialog Window
+  macOS button clicked - using Cocoa framework
+  Showing macOS native dialog (Cocoa/AppKit)
+
+3. Linux Application:
+------------------------------------------------------------
+  🐧 Linux Menu Bar
+  🐧 [Linux Button]
+  🐧 Linux Dialog Window
+  Linux button clicked - using GTK/Qt
+  Showing Linux native dialog (GTK/Qt)
+
+============================================================
+Key Benefit: Application doesn't need to know which
+concrete UI classes to create - factory handles it!
+============================================================

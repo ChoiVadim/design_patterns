@@ -1,0 +1,26 @@
+============================================================
+Strategy Pattern - Payment Processing Example
+============================================================
+
+1. Credit Card Payment:
+------------------------------------------------------------
+Processing credit card payment of $99.99
+Card: ****9010
+Result: {'status': 'success', 'method': 'credit_card', 'amount': 99.99, 'transaction_id': 'CC-2568'}
+
+2. PayPal Payment:
+------------------------------------------------------------
+Processing PayPal payment of $149.50
+PayPal account: customer@example.com
+Result: {'status': 'success', 'method': 'paypal', 'amount': 149.5, 'transaction_id': 'PP-9983'}
+
+3. Cryptocurrency Payment:
+------------------------------------------------------------
+Processing BTC payment of $200.00
+Wallet: 1A1zP1eP5Q...Lmv7DivfNa
+Result: {'status': 'success', 'method': 'crypto', 'currency': 'BTC', 'amount': 200.0, 'transaction_id': 'CRYPTO-7979'}
+
+============================================================
+Key Benefit: Can switch payment methods at runtime
+without modifying the PaymentProcessor class!
+============================================================

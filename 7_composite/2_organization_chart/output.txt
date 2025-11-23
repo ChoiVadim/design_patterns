@@ -1,0 +1,63 @@
+============================================================
+Composite Pattern - Organization Chart Example
+============================================================
+
+Organization Chart:
+------------------------------------------------------------
+🏢 TechCorp Inc. (15 employees, $1,383,000 total salary)
+  🏢 Engineering (4 employees, $360,000 total salary)
+    👤 Alice Johnson - Engineering Manager ($120,000)
+    👤 Bob Smith - Senior Developer ($95,000)
+    👤 Charlie Brown - Developer ($75,000)
+    👤 Diana Prince - QA Engineer ($70,000)
+  🏢 Sales (3 employees, $228,000 total salary)
+    👤 Eve Wilson - Sales Manager ($110,000)
+    👤 Frank Miller - Sales Representative ($60,000)
+    👤 Grace Lee - Sales Representative ($58,000)
+  🏢 Marketing (5 employees, $380,000 total salary)
+    👤 Henry Davis - Marketing Director ($130,000)
+    🏢 Digital Marketing (2 employees, $120,000 total salary)
+      👤 Ivy Chen - SEO Specialist ($65,000)
+      👤 Jack Taylor - Content Writer ($55,000)
+    🏢 Social Media (2 employees, $130,000 total salary)
+      👤 Kate Anderson - Social Media Manager ($70,000)
+      👤 Liam O'Brien - Graphic Designer ($60,000)
+  🏢 Human Resources (2 employees, $165,000 total salary)
+    👤 Mia Rodriguez - HR Manager ($100,000)
+    👤 Noah Kim - Recruiter ($65,000)
+  👤 Oliver White - CEO ($250,000)
+
+Organization Statistics:
+------------------------------------------------------------
+Total Employees: 15
+Total Payroll: $1,383,000
+
+Department Breakdown:
+------------------------------------------------------------
+Engineering:
+  Employees: 4
+  Total Salary: $360,000
+  Average Salary: $90,000
+Sales:
+  Employees: 3
+  Total Salary: $228,000
+  Average Salary: $76,000
+Marketing:
+  Employees: 5
+  Total Salary: $380,000
+  Average Salary: $76,000
+Human Resources:
+  Employees: 2
+  Total Salary: $165,000
+  Average Salary: $82,500
+
+Uniform Interface Demo:
+------------------------------------------------------------
+TechCorp Inc.: 15 employees, $1,383,000 salary
+Engineering: 4 employees, $360,000 salary
+Test Employee: 1 employees, $50,000 salary
+
+============================================================
+Key Benefit: Can treat employees and departments uniformly!
+Operations work the same way on both individual employees and departments!
+============================================================
