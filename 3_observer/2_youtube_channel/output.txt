@@ -1,0 +1,24 @@
+============================================================
+Observer Pattern - YouTube Channel Example
+============================================================
+
+Channel 'TechDaily': Attached a new subscriber.
+Channel 'TechDaily': Attached a new subscriber.
+
+Channel 'TechDaily' is uploading video: 'Observer Pattern Explained'
+Channel 'TechDaily': Notifying 2 subscribers...
+  [Notification] Hey Alice, TechDaily just uploaded 'Observer Pattern Explained'!
+  [Notification] Hey Bob, TechDaily just uploaded 'Observer Pattern Explained'!
+
+Channel 'TechDaily': Attached a new subscriber.
+Channel 'TechDaily': Detached a subscriber.
+
+Channel 'TechDaily' is uploading video: 'Python Design Patterns Tutorial'
+Channel 'TechDaily': Notifying 2 subscribers...
+  [Notification] Hey Alice, TechDaily just uploaded 'Python Design Patterns Tutorial'!
+  [Notification] Hey Charlie, TechDaily just uploaded 'Python Design Patterns Tutorial'!
+
+============================================================
+Key Benefit: The channel doesn't need to know WHO subscribers are,
+just that they implement the Observer interface!
+============================================================

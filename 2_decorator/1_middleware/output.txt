@@ -1,0 +1,36 @@
+============================================================
+Decorator Pattern - Middleware Example
+============================================================
+
+1. Direct Request (No Middleware):
+------------------------------------------------------------
+Processing request for path: /home
+  -> Core logic executed (Database query, Business logic, etc.)
+  -> Response generated: 200 OK
+
+2. Request with Logging:
+------------------------------------------------------------
+[LOG] Incoming request: {'path': '/about', 'user': 'guest', 'is_authenticated': True}
+Processing request for path: /about
+  -> Core logic executed (Database query, Business logic, etc.)
+  -> Response generated: 200 OK
+[LOG] Request finished for: /about
+
+3. Request with Auth + Logging:
+------------------------------------------------------------
+Case A: Valid User
+[AUTH] User is authenticated. Proceeding...
+[LOG] Incoming request: {'path': '/dashboard', 'user': 'admin', 'is_authenticated': True}
+Processing request for path: /dashboard
+  -> Core logic executed (Database query, Business logic, etc.)
+  -> Response generated: 200 OK
+[LOG] Request finished for: /dashboard
+
+Case B: Invalid User
+[AUTH] Authentication FAILED! Request blocked.
+  -> Response generated: 401 Unauthorized
+
+============================================================
+Key Benefit: We can wrap the core handler with any number of
+middleware layers (Auth, Logging, Caching) dynamically!
+============================================================
