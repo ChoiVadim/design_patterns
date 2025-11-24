@@ -9,11 +9,11 @@ This repository contains real-world examples of 8 design patterns, with 2 exampl
 # Patterns Covered
 
 1. **Strategy Pattern** - Payment Processing, Sorting Algorithms
-2. **Decorator Pattern** - Coffee Shop, Text Formatting
-3. **Observer Pattern** - Stock Market, Weather Station
+2. **Decorator Pattern** - Middleware, Text Formatting
+3. **Observer Pattern** - Stock Market, YouTube Channel
 4. **Adapter Pattern** - Media Player, Payment Gateway
 5. **Factory Pattern** - UI Components, Database Connections
-6. **State Pattern** - Vending Machine, Traffic Light
+6. **State Pattern** - Music Player, Traffic Light
 7. **Composite Pattern** - File System, Organization Chart
 8. **Template Method Pattern** - Recipe System, Build Process
 
@@ -33,11 +33,11 @@ Patterns/
 │   ├── 1_payment_processing/     (E-commerce payment systems)
 │   └── 2_sorting_algorithms/     (Data analysis tools)
 ├── 2_decorator/
-│   ├── 1_coffee_shop/           (GUI frameworks, I/O streams)
+│   ├── 1_middleware/            (Web frameworks, logging, auth)
 │   └── 2_text_formatting/       (Rich text editors)
 ├── 3_observer/
 │   ├── 1_stock_market/          (Event-driven systems, MVC)
-│   └── 2_weather_station/       (IoT systems, dashboards)
+│   └── 2_youtube_channel/       (Social media, pub-sub)
 ├── 4_adapter/
 │   ├── 1_media_player/          (API integrations, legacy systems)
 │   └── 2_payment_gateway/       (Payment processing, cloud services)
@@ -45,7 +45,7 @@ Patterns/
 │   ├── 1_ui_components/         (GUI frameworks, game engines)
 │   └── 2_database_connections/  (ORM frameworks, connection pools)
 ├── 6_state/
-│   ├── 1_vending_machine/       (Game development, workflow engines)
+│   ├── 1_music_player/          (Media players, workflow engines)
 │   └── 2_traffic_light/         (Embedded systems, IoT devices)
 ├── 7_composite/
 │   ├── 1_file_system/           (File systems, GUI hierarchies)
@@ -66,13 +66,13 @@ Patterns/
 
 ### Decorator Pattern
 
-- **Coffee Shop**: GUI frameworks (adding borders, scrollbars), I/O streams, middleware
+- **Middleware**: Web frameworks (Django, Express), request processing, logging, authentication
 - **Text Formatting**: Rich text editors (Word, Google Docs), markdown processors, HTML rendering
 
 ### Observer Pattern
 
 - **Stock Market**: Event-driven systems, GUI frameworks, reactive programming (RxJS), MVC
-- **Weather Station**: IoT systems, sensor networks, dashboard applications, monitoring systems
+- **YouTube Channel**: Social media platforms, notification systems, pub-sub architectures
 
 ### Adapter Pattern
 
@@ -86,7 +86,7 @@ Patterns/
 
 ### State Pattern
 
-- **Vending Machine**: Game development, workflow engines, order processing systems, UI state management
+- **Music Player**: Media players, workflow engines, order processing systems, UI state management
 - **Traffic Light**: Embedded systems, IoT devices, automation systems, workflow management
 
 ### Composite Pattern
